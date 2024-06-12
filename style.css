@@ -1,0 +1,95 @@
+*{
+background-image: url(body.jpg);
+background-size: cover;
+background-attachment: fixed;
+background-repeat: no-repeat;
+}
+
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+    margin-top: 300px;
+    background: radial-gradient(purple,black);
+}
+
+h1{
+    color: white;
+    background: radial-gradient(purple,black); 
+}
+
+
+button {
+    margin: 10px;
+
+}
+/* Basic button styling */
+.btn {
+    background-color: indianred; /* Green background */
+    border: none;             /* Remove borders */
+    color: black;            /* black text */
+    font-weight: bold;
+    padding: 15px 32px;       /* Some padding */
+    text-align: center;       /* Centered text */
+    text-decoration: none;    /* Remove underline */
+   
+    font-size: 16px;          /* Increase font size */
+    margin: 4px 2px;          /* Some margin */
+    cursor: pointer;          /* Pointer/hand icon */
+    border-radius: 12px;      /* Rounded corners */
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s; /* Smooth transitions */
+}
+
+/* Hover effects */
+.btn:hover {
+    background-color:indianred; /* Darker green */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3); /* Add shadow */
+    transform: translateY(-3px); /* Slight lift effect */
+}
+
+/* Active button styling */
+.btn:active {
+    background-color:indianred; /* Even darker green */
+    /* box-shadow: 0 3px 10px rgba(0,0,0,0.2); Less shadow */
+    transform: translateY(1px); /* Pressed down effect */
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        max-width: 90%;
+        padding: 10px;
+    }
+
+    .btn {
+        padding: 12px 24px;
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        max-width: 95%;
+        padding: 10px;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 12px;
+    }
+
+    h1 {
+        font-size: 1.2em;
+    }
+
+    audio {
+        width: 100%; /* Ensure the audio control is fully responsive */
+    }
+}
